@@ -37,6 +37,16 @@ p {
   text-transform: none;
   color: var(--light-gray);
 }
+.description-hero {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 33px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--white);
+}
 .button {
   font-size: 24px;
   font-family: Inter;
@@ -170,4 +180,100 @@ header {
 }
 .text-right .number {
   margin-left: auto;
+}
+
+.hero .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero .col {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.green-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--green);
+  border-radius: 8px;
+  padding: 24px 32px;
+  margin: 85px auto 137px; /* centers it */
+  max-width: 1280px; /* keeps it neat and not full-width */
+  gap: 16px;
+  box-sizing: border-box;
+}
+.green-box .form input {
+  flex: 2; /* double the size relative to the button */
+  min-width: 300px; /* optional: ensures it’s not too small on mobile */
+}
+
+.link p {
+  width: 50%;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  flex: 1;
+  min-width: 200px;
+}
+.form button {
+  background-color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--green);
+  font-weight: bold;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 80px;
+}
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.hero .description {
+  width: 80%;
 }
