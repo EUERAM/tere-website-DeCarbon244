@@ -8,6 +8,7 @@
   --dark-gray: rgba(39, 32, 66, 1);
   --background: rgba(249, 249, 249, 1);
 }
+
 h1 {
   font-size: 64px;
   font-family: Inter;
@@ -17,44 +18,7 @@ h1 {
   text-decoration: none;
   text-transform: none;
 }
-p {
-  font-size: 18px;
-  font-family: Inter;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 26px;
-  text-decoration: none;
-  text-transform: none;
-  margin: 0;
-}
-.description {
-  font-size: 24px;
-  font-family: Inter;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 33px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--light-gray);
-}
-.description-hero {
-  font-size: 24px;
-  font-family: Inter;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 33px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--white);
-}
-.button {
-  font-size: 24px;
-  font-family: Inter;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none;
-  text-transform: none;
-}
+
 h2 {
   font-size: 47px;
   font-family: Inter;
@@ -65,6 +29,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
+
 h3 {
   font-size: 22px;
   font-family: Inter;
@@ -75,6 +40,59 @@ h3 {
   text-transform: uppercase;
   margin: 0;
 }
+
+h4 {
+  font-size: 33px;
+  font-family: Inter;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 33px;
+  text-decoration: none;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: none;
+  margin: 0;
+}
+
+.description {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 33px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--light-gray);
+}
+
+.description-hero {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 33px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--white);
+}
+
+.button {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
 .small-button {
   font-size: 16px;
   font-family: Inter;
@@ -83,6 +101,7 @@ h3 {
   text-decoration: none;
   text-transform: none;
 }
+
 .small {
   font-size: 16px;
   font-family: Inter;
@@ -135,10 +154,66 @@ header {
   background-color: black;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 80px;
+}
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.hero .description {
+  width: 80%;
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--background);
+}
+
+.hero .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero .col {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* HOW IT WORKS */
 
 .how-it-works {
   padding-top: 80px;
+  background-color: var(--background);
 }
 .how-it-works .step {
   margin-bottom: 50px;
@@ -165,8 +240,7 @@ header {
   font-size: 34.108px;
   font-style: normal;
   font-weight: 800;
-  line-height: 37.019px; /* 108.537% */
-  /* to get number into the center */
+  line-height: 37.019px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,24 +256,7 @@ header {
   margin-left: auto;
 }
 
-.hero .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.hero .col {
-  flex: 1;
-  min-width: 320px;
-}
-
-.hero img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+/* LINK */
 
 .green-box {
   display: flex;
@@ -217,6 +274,10 @@ header {
 .green-box .form input {
   flex: 2; /* double the size relative to the button */
   min-width: 300px; /* optional: ensures it’s not too small on mobile */
+}
+
+.link {
+  background-color: var(--background);
 }
 
 .link p {
@@ -248,32 +309,144 @@ header {
   color: var(--white);
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  margin-top: 80px;
+/* BENEFITS SECTION */
+.benefits {
+  background-color: var(--background);
+  padding: 100px 0;
 }
 
-.btn-hero {
-  display: inline-flex;
+.benefits h2 {
+  margin-bottom: 60px;
+}
+
+.benefit-box {
+  display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 40px 60px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-text {
+  flex: 1;
+  display: grid;
+}
+
+.benefit-box.reverse .benefit-text {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.benefit-text .green {
+  font-size: 88px;
+  font-weight: 500; /* medium weight */
+  margin-right: 8px;
+}
+
+.benefit-text .description {
+  font-size: 18px;
+  color: var(--gray);
+  width: 90%;
+}
+
+.benefit-img {
+  flex: 1;
+  text-align: right;
+}
+
+.benefit-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--white);
+  padding-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+.footer-col p {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  color: var(--gray);
+  margin: 4px 0;
+}
+
+.footer-logo {
+  max-width: 120px;
+  margin-top: 43px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  gap: 20px; /* space between the buttons */
+  margin-top: 54px; /* optional, to separate from text above */
+}
+
+.footer-buttons .btn-hero {
   background-color: var(--dark-gray);
   color: var(--white);
-  text-decoration: none;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 12px 24px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
-.btn-hero:hover {
+.footer-buttons .btn-hero:hover {
   background-color: var(--green);
   color: var(--black);
 }
 
-.hero .description {
-  width: 80%;
+.footer-buttons .btn-hero img {
+  width: 21px; /* smaller icon size */
+  height: 24px;
+  margin-left: 8px; /* keeps a nice gap from the text */
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  font-family: Inter;
+  font-size: 14px;
+  color: var(--green);
+  margin: 0;
 }
